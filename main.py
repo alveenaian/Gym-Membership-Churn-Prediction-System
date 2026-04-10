@@ -9,7 +9,7 @@ y = df["churn"]
 model = RandomForestClassifier()
 model.fit(x, y)
 
-print("✅ Model trained successfully!")
+print("Model trained successfully!")
 
 def predict_churn(visits, months, last_visit):
     data = pd.DataFrame([[visits, months, last_visit]],
